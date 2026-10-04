@@ -143,3 +143,21 @@ button{font:inherit}
   .reveal{opacity:1;transform:none;transition:none}
   .cursor{animation:none}
 }
+.online-pill{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid #273020;border-radius:999px;background:#10150d;color:#d8e6cb;font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:25px}
+.online-pill i{width:7px;height:7px;background:#78ff3f;border-radius:50%;box-shadow:0 0 12px #78ff3f}
+.profile-orbit{width:min(39vw,430px);height:min(39vw,430px);min-width:300px;min-height:300px;position:relative;display:grid;place-items:center}
+.profile-photo{position:relative;z-index:4;width:64%;height:64%;object-fit:cover;object-position:center top;border-radius:50%;border:7px solid #101318;box-shadow:0 0 0 1px #3a424c,0 25px 70px rgba(0,0,0,.5)}
+.profile-glow{position:absolute;z-index:1;width:72%;height:72%;border-radius:50%;background:rgba(42,135,255,.13);filter:blur(28px)}
+.orbit{position:absolute;border:1px solid rgba(102,154,224,.18);border-radius:50%;z-index:2}
+.orbit-a{width:82%;height:82%;transform:rotate(18deg)}
+.orbit-b{width:100%;height:58%;transform:rotate(-28deg)}
+.orbit-dot{position:absolute;width:14px;height:14px;border-radius:50%;z-index:5;box-shadow:0 0 18px currentColor}
+.dot-a{right:7%;top:17%;background:#b9ff4a;color:#b9ff4a}
+.dot-b{left:5%;bottom:18%;background:#55a8ff;color:#55a8ff}
+@media(max-width:900px){
+  .profile-orbit{width:min(72vw,390px);height:min(72vw,390px)}
+}
+@media(max-width:650px){
+  .profile-orbit{width:320px;height:320px;min-width:0;min-height:0}
+  .profile-photo{width:65%;height:65%}
+}
