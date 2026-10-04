@@ -195,3 +195,38 @@ button{font:inherit}
  .vertical-word{display:none}
  .unique-hero::after{width:300px;height:300px}
 }
+/* Premium project cards */
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project-card{background:linear-gradient(145deg,#111419,#0c0e11);border:1px solid var(--line);overflow:hidden;transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease}
+.project-card:hover{transform:translateY(-8px);border-color:#3c444d;box-shadow:0 28px 70px rgba(0,0,0,.38)}
+.project-preview{height:275px;position:relative;overflow:hidden;background:#0a0c0f}
+.preview-index{position:absolute;right:16px;top:14px;color:#727984;font:10px monospace;z-index:5}
+.preview-bar{height:34px;display:flex;align-items:center;gap:5px;padding:0 13px;border-bottom:1px solid rgba(255,255,255,.07);color:#6f7680;font:9px monospace}
+.preview-bar i{width:6px;height:6px;border-radius:50%;background:#3a4048}.preview-bar span{margin-left:7px}
+.shop-ui{padding:20px}
+.shop-nav{font:700 11px "Space Grotesk";letter-spacing:2px;display:flex;justify-content:space-between}
+.shop-hero{margin-top:24px;padding:25px 20px;background:linear-gradient(135deg,#171b20,#101317);border:1px solid #252b32}
+.shop-hero small{font-size:8px;letter-spacing:1.7px;color:var(--accent)}
+.shop-hero strong{display:block;font:700 28px/1 "Space Grotesk";margin-top:12px;letter-spacing:-1px}
+.shop-products{display:flex;gap:8px;margin-top:13px}.shop-products i{height:45px;flex:1;background:#1b2026;border:1px solid #292f36}
+.trading-preview{background:#0b1111}
+.chart-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(185,255,74,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(185,255,74,.06) 1px,transparent 1px);background-size:35px 35px}
+.chart-line,.chart-line-2{position:absolute;width:125%;height:2px;background:var(--accent);top:56%;left:-10%;transform:rotate(-14deg);box-shadow:0 0 15px rgba(185,255,74,.35)}
+.chart-line-2{top:64%;left:-15%;transform:rotate(9deg);opacity:.32}
+.chart-label{position:absolute;top:22px;left:20px;font:700 11px monospace;color:#d7ddd3}
+.chart-pill{position:absolute;bottom:20px;left:20px;border:1px solid #35412a;color:var(--accent);padding:6px 9px;font:8px monospace;letter-spacing:1px}
+.calc-preview{padding:25px;background:radial-gradient(circle at 70% 20%,rgba(185,255,74,.12),transparent 45%),#0d1013}
+.calc-screen{border:1px solid #2a3037;background:#080a0c;padding:18px;height:115px;display:flex;flex-direction:column;justify-content:space-between}
+.calc-screen small{font:8px monospace;color:var(--accent);letter-spacing:1px}.calc-screen strong{font:700 27px monospace}.calc-screen span{font:10px monospace;color:#69717a}
+.calc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:10px}.calc-keys i{font:700 9px monospace;font-style:normal;text-align:center;padding:10px 2px;background:#171b20;border:1px solid #252b32;color:#9da4ad}
+.project-content{padding:25px 25px 27px}
+.project-heading{display:flex;justify-content:space-between;align-items:center;color:var(--accent);font:9px monospace;letter-spacing:1.5px}
+.project-heading a{font-size:18px;color:#9da4ad;transition:.2s}.project-heading a:hover{color:var(--accent)}
+.project-content h3{font:700 23px/1.15 "Space Grotesk";letter-spacing:-.5px;margin:17px 0 11px}
+.project-content p{color:var(--muted);font-size:13px;line-height:1.65;min-height:86px}
+.project-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:17px}.project-tags span{font-size:9px;color:#9ca3ac;border:1px solid #2a3037;padding:5px 8px}
+.project-links{display:flex;gap:20px;margin-top:22px;padding-top:17px;border-top:1px solid #242930}
+.project-links a{font-size:10px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;color:#dce1e5}.project-links a:hover{color:var(--accent)}
+.project-links b{color:var(--accent);margin-left:5px}
+@media(max-width:900px){.project-grid{grid-template-columns:1fr 1fr}.project-card:last-child{grid-column:1/-1;max-width:calc(50% - 9px)}}
+@media(max-width:650px){.project-grid{grid-template-columns:1fr}.project-card:last-child{grid-column:auto;max-width:none}.project-preview{height:245px}.project-content p{min-height:auto}}
